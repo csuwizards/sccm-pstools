@@ -1,8 +1,9 @@
-/    [CmdletBinding()]
+    [CmdletBinding()]
     param (
         $Src
     )
-    
+#  This will be used via SCCM to install WinSalt
+# 
 if (-not (Test-Path -Path c:\temp)) {
     mkdir c:\temp
 }
